@@ -1,0 +1,142 @@
+/*
+ Theme Name:   James web
+ Theme URI:    
+ Description:  Twenty Fourteen Child Theme
+ Author:       James Boyd
+ Author URI:   http://example.com
+ Template:     twentyfourteen
+ Version:      1.0.0
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fourteen-child
+*/
+
+@import url("../twentyfourteen/style.css");
+
+
+/*========================== GENERAL ==============================*/
+
+
+/* General */
+
+body, button, input, select, textarea {
+	color: #2b2b2b;
+	font-family: Lato, sans-serif;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.5;
+}
+
+.site {
+	background-color: transparent;
+	margin: 0 auto;
+}
+
+.site:before {
+	display: none !important;
+}
+
+.full-width .site-content {
+	margin: 0 auto;
+}
+
+.entry-title {
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 1.0909090909;
+	margin-bottom: 12px;
+	margin: 0 0 8px 0;
+	text-transform: uppercase;
+}
+
+.site-content .entry-header {
+	background-color: #fff;
+	padding: 24px 10px 2px;
+}
+
+.site-content .entry-meta {
+	margin-bottom: 0px;
+}
+
+.hentry {
+	margin: 0 auto;
+}
+
+.full-width.home .site-content .hentry.has-post-thumbnail {
+	margin-top: 0px;
+}
+
+.post-thumbnail {
+	background: #fff none;
+	display: block;
+	position: relative;
+	width: 100%;
+	z-index: 0;
+}
+
+.site:before {
+	background-color: transparent;
+	content: "";
+	display: block;
+	height: 100%;
+	min-height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 182px;
+	z-index: 2;
+}
+
+.full-width .site-content .has-post-thumbnail .entry-header, .full-width.singular .site-content .hentry.has-post-thumbnail, .full-width.home .site-content .hentry.has-post-thumbnail {
+	margin-top: 0px;
+}
+
+.site-footer {
+	background-color: rgba(0, 0, 0, 0.8);
+	color: #ccc;
+}
+
+.site-footer, .site-info, .site-info a {
+	color: #666;
+}
+
+#secondary {
+	display: none;
+	/*background-color: transparent;
+	border: 0;
+	clear: both;
+	float: none;
+	margin: 0;
+	min-height: inherit;
+	width: 1200px;
+	background-color: #ccc;*/
+}
+
+
+/* Masonry styles */
+
+.item { 
+	width: 220px; 
+	margin: 0 15px 30px 15px;
+	box-shadow: 0px 0px 3px 1px rgba(204,204,204,0.4);
+}
+
+.item:nth-child(1), .item:nth-child(3) { 
+	width: 470px; 
+}
+
+.single .item { 
+	width: 92%; 
+	margin: 0 4%;
+	box-shadow: 0px 0px 3px 1px rgba(204,204,204,0.4);
+}
+
+.site-content .entry-header, .site-content .entry-content, .site-content .entry-summary, .site-content .entry-meta, .page-content {
+	max-width: 100%;
+}
+
+#secondary {
+	width: 92%;
+	padding: 4% 4%;
+	background-color: #000;
+	opacity: 0.8;
+}
