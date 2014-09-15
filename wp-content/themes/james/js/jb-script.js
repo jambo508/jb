@@ -9,9 +9,9 @@ $content.imagesLoaded( function() {
 });
 
 
-jQuery('#content').masonry({
+jQuery('body.home #content').masonry({
   columnWidth: 250,
-  itemSelector: '.item',
+  itemSelector: 'article',
   "isFitWidth": true
 });
 

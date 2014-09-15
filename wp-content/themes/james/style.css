@@ -112,21 +112,47 @@ body, button, input, select, textarea {
 }
 
 
+/* home page */
+
+.site-content .entry-header,
+.site-content .entry-meta,
+.site-content .entry-content,
+.post-thumbnail
+{
+	background-color: transparent;
+}
+
+/* items */
+
+article
+{
+	border-radius: 3px;
+	background-color: #fff;
+	margin-bottom: 20px !important;
+}
+
+article .category-work
+{
+	background-color: #f2f2f2;
+}
+
+.list-view .site-content .hentry
+{
+	padding-top: 0 !important;
+}
+
+
 /* Masonry styles */
 
-.item { 
+article { 
 	width: 220px; 
 	margin: 0 15px 30px 15px;
 	box-shadow: 0px 0px 3px 1px rgba(204,204,204,0.4);
 }
 
-.item:nth-child(1), .item:nth-child(3) { 
-	width: 470px; 
-}
-
-.single .item { 
-	width: 92%; 
-	margin: 0 4%;
+.single article { 
+	width: 100%; 
+	margin: 0 0%;
 	box-shadow: 0px 0px 3px 1px rgba(204,204,204,0.4);
 }
 
